@@ -50,7 +50,7 @@
 <div class="container-fluid">
 </div>
 ```
-![Gambar 2](ss2.png)
+
 
 # Grid Sistem
 ```
@@ -65,7 +65,7 @@
   </div>
 </div>
 ```
-![Gambar3](ss3.png)
+
 
 # Komponen Button (Tombol)
 ```
