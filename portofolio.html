@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Saya</title>
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Bagian foto agar lebih proporsional */
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #0d6efd;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Section heading */
+    h2.section-title {
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    /* Spasi antar section */
+    section {
+      padding: 60px 0;
+    }
+
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 15px 0;
+    }
+
+    /* Responsive tweak */
+    @media (max-width: 768px) {
+      .profile-pic {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Portfolio Saya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#tentang">Tentang Saya</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tentang Saya -->
+  <section id="tentang">
+    <div class="container">
+      <h2 class="text-center section-title">Tentang Saya</h2>
+      <div class="row align-items-center justify-content-center">
+        <!-- Kolom kiri -->
+        <div class="col-md-4 text-center">
+          <img src="profile.png" alt="Foto Saya" class="profile-pic">
+        </div>
+
+        <!-- Kolom kanan -->
+        <div class="col-md-6">
+          <h3 class="fw-bold">Nama Anda</h3>
+          <p>
+            Halo! Saya adalah mahasiswa Informatika yang memiliki minat di bidang pengembangan web dan kecerdasan buatan.
+            Saya senang mempelajari teknologi baru, memecahkan masalah, dan mengembangkan proyek-proyek yang inovatif.
+          </p>
+          <p>
+            Saat ini saya sedang memperdalam kemampuan dalam HTML, CSS, JavaScript, dan Bootstrap untuk menjadi
+            web developer yang handal di masa depan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Saya -->
+  <section id="portfolio" class="bg-light">
+    <div class="container">
+      <h2 class="text-center section-title">Portfolio Saya</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="web.jpg" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <h5 class="card-title">Website Sederhana</h5>
+              <p class="card-text">Website pertama saya menggunakan HTML, CSS, dan Bootstrap.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="todo.png" class="card-img-top" alt="Proyek 2">
+            <div class="card-body">
+              <h5 class="card-title">To-Do List App</h5>
+              <p class="card-text">Aplikasi pencatat tugas harian sederhana menggunakan JavaScript.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <img src="ui.png" class="card-img-top" alt="Proyek 3">
+            <div class="card-body">
+              <h5 class="card-title">Desain UI Portfolio</h5>
+              <p class="card-text">Desain halaman portfolio interaktif yang dibuat di Figma.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p class="mb-0">Muhamad Nikmal Wahid</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

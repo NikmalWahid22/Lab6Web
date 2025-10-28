@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Sederhana - Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f2f2f2;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    #hero {
+      background: #f8f9fa;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #hero h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    #hero p {
+      max-width: 700px;
+      margin: 15px auto;
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    .image-circle {
+      border-radius: 50%;
+    }
+    .divider {
+      border-top: 2px solid #ccc;
+      margin: 30px 0;
+    }
+    .right-img {
+      float: right;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Layout Sederhana</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Artikel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="text-center">
+    <div class="container">
+      <h1>Hello World</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime voluptates nostrum numquam eligendi voluptate esse culpa fuga doloribus sunt, iusto, eius suscipit commodi delectus at.</p>
+      <a href="#" class="btn btn-primary btn-lg">Learn more &raquo;</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Main -->
+      <div class="col-md-8">
+        <!-- 3 Cards -->
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+              <img src="https://dummyimage.com/120/db7d25/fff.png" class="card-img-top image-circle mx-auto mt-3" style="width:120px;">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                <a href="#" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+              <img src="https://dummyimage.com/120/3e73e6/fff.png" class="card-img-top image-circle mx-auto mt-3" style="width:120px;">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                <a href="#" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm">
+              <img src="https://dummyimage.com/120/71e6d4/fff.png" class="card-img-top image-circle mx-auto mt-3" style="width:120px;">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                <a href="#" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Article 1 -->
+        <article class="entry mb-4">
+          <h2>First featurette heading.</h2>
+          <img src="https://dummyimage.com/150/7b8a70/fff.png" class="float-start me-3 mb-2" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis.</p>
+        </article>
+
+        <hr class="divider">
+
+        <!-- Article 2 -->
+        <article class="entry">
+          <h2>Second featurette heading.</h2>
+          <img src="https://dummyimage.com/150/7b8a70/fff.png" class="float-end ms-3 mb-2" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis.</p>
+        </article>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Widget Header</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+              <li><a href="#">Widget Link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Widget Box</h5>
+            <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
